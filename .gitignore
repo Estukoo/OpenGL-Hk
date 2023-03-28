@@ -1,0 +1,6 @@
+x64/
+build/
+.vs/
+.vscode/
+
+OpenGL-Hk.vcxproj.user
