@@ -71,7 +71,7 @@ LRESULT __stdcall Hooks::WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lPar
 
     char windowTitle[256];
     GetWindowTextA(hWnd, windowTitle, sizeof(windowTitle));
-    std::cout << windowTitle << std::endl;
+    // std::cout << windowTitle << std::endl; // To assert that I intercept the right window
 
     LRESULT result = CallWindowProc(hooks->oWndProc, hWnd, msg, wParam, lParam);
     // std::cout << "WndProc received message: " << msg << ", result: " << result << std::endl;
